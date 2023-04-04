@@ -1,8 +1,9 @@
 import React from "react";
+import Navbar from "./navbar.jsx"
 
 //include images into your bundle
-
 import  Card  from "./card.jsx";
+
 
 //create your first component
 const Home = () => {
@@ -15,22 +16,27 @@ const Home = () => {
 	}
   
 	return (
+
 		<div className="container-fluid">
-		<div className="row justify-content-around">
-		  <div className="col-lg-3 col-md-6 mb-4">
-			{cardComponents[0]}
-		  </div>
-		  <div className="col-lg-3 col-md-6 mb-4">
-			{cardComponents[1]}
-		  </div>
-		  <div className="col-lg-3 col-md-6 mb-4">
-			{cardComponents[2]}
-		  </div>
-		  <div className="col-lg-3 col-md-6 mb-4">
-			{cardComponents[3]}
-		  </div>
+    
+    	<Navbar />
+      //card components
+		  <div className="row justify-content-around">
+        <div className="col-lg-3 col-md-6 mb-4">
+        {cardComponents[0]}
+        </div>
+        <div className="col-lg-3 col-md-6 mb-4">
+        {cardComponents[1]}
+        </div>
+        <div className="col-lg-3 col-md-6 mb-4">
+        {cardComponents[2]}
+        </div>
+        <div className="col-lg-3 col-md-6 mb-4">
+        {cardComponents[3]}
+        </div>
 		</div>
 	  </div>
+
 	);
   };
 
