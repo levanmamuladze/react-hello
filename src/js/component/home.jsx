@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "./footer.jsx";
 import Navbar from "./navbar.jsx"
 import Jumbotron from "./jumbotron.jsx";
-import  Card  from "./card.jsx";
+import Card from "./card.jsx";
 
 
 
@@ -18,12 +18,11 @@ const Home = () => {
   
 	return (
 
-	  <div className="container-fluid">
+	  <div className="container-fluid g-0">
     
     	<Navbar />
       <Jumbotron />
-      //card components
-		  <div className="row justify-content-around">
+      <div className="row justify-content-around">
         <div className="col-lg-3 col-md-6 mb-4">
         {cardComponents[0]}
         </div>
@@ -37,7 +36,7 @@ const Home = () => {
         {cardComponents[3]}
         </div>
 		  </div>
-    <Footer />
+		  <Footer />
    </div>
 
 	);
