@@ -19,7 +19,7 @@ const Home = () => {
 	
   return (
     <div>
-    <div>
+    <div className="g-0">
       <Navbar />
     </div>
       <div className="container p-5 mt-4 rounded" style={{backgroundColor: "#E0E0E0"}}>
