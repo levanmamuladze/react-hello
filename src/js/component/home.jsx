@@ -1,9 +1,9 @@
 import React from "react";
 import Footer from "./footer.jsx";
 import Navbar from "./navbar.jsx"
-
-//include images into your bundle
+import Jumbotron from "./jumbotron.jsx";
 import  Card  from "./card.jsx";
+
 
 
 //create your first component
@@ -18,9 +18,10 @@ const Home = () => {
   
 	return (
 
-		<div className="container-fluid">
+	  <div className="container-fluid">
     
     	<Navbar />
+      <Jumbotron />
       //card components
 		  <div className="row justify-content-around">
         <div className="col-lg-3 col-md-6 mb-4">
@@ -35,9 +36,9 @@ const Home = () => {
         <div className="col-lg-3 col-md-6 mb-4">
         {cardComponents[3]}
         </div>
-		</div>
+		  </div>
     <Footer />
-  </div>
+   </div>
 
 	);
   };
