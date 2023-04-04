@@ -1,8 +1,9 @@
 import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
+
 const Card = () => {
     return (
-      <div className="card" style={{ width: "25rem", height:"20rem"  }}>
+      <div className="card">
         <img src={rigoImage} className="card-img" alt="..."  />
         <div className="card-body">
           <h5 className="card-title">Card title</h5>

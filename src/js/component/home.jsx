@@ -1,8 +1,10 @@
 import React from "react";
+import Footer from "./footer.jsx";
+import Navbar from "./navbar.jsx"
+import Jumbotron from "./jumbotron.jsx";
+import Card from "./card.jsx";
 
-//include images into your bundle
 
-import  Card  from "./card.jsx";
 
 //create your first component
 const Home = () => {
@@ -14,25 +16,38 @@ const Home = () => {
 
 	}
   
-	return (
-		<div className="container-fluid">
-		<div className="row justify-content-around">
-		  <div className="col-lg-3 col-md-6 mb-4">
-			{cardComponents[0]}
-		  </div>
-		  <div className="col-lg-3 col-md-6 mb-4">
-			{cardComponents[1]}
-		  </div>
-		  <div className="col-lg-3 col-md-6 mb-4">
-			{cardComponents[2]}
-		  </div>
-		  <div className="col-lg-3 col-md-6 mb-4">
-			{cardComponents[3]}
-		  </div>
-		</div>
-	  </div>
-	);
-  };
+	
+  return (
+    <div>
+    <div className="container-fluid">
+      <Navbar />
+    </div>
+      <div className="container p-5 " style={{backgroundColor: "lightgrey"}}>
+        <Jumbotron />
+      </div>
+      <div className="container">
+        <div className="row justify-content-between">
+          <div className="col-lg-3 col-md-6 mb-4 pt-3">
+            <div className="card">{cardComponents[0]}</div>
+          </div>
+          <div className="col-lg-3 col-md-6 mb-4 pt-3">
+            <div className="card">{cardComponents[1]}</div>
+          </div>
+          <div className="col-lg-3 col-md-6 mb-4 pt-3">
+            <div className="card">{cardComponents[2]}</div>
+          </div>
+          <div className="col-lg-3 col-md-6 mb-4 pt-3">
+            <div className="card">{cardComponents[3]}</div>
+          </div>
+        </div>
+      </div>
+      <div>
+      <Footer />
+    </div>
+    </div>
+  );
+};
+  
 
 
 export default Home;
