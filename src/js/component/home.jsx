@@ -19,7 +19,7 @@ const Home = () => {
 	
   return (
     <div>
-    <div className="container-fluid">
+    <div>
       <Navbar />
     </div>
       <div className="container p-5" style={{backgroundColor: "lightgrey"}}>
