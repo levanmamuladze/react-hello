@@ -22,11 +22,11 @@ const Home = () => {
     <div>
       <Navbar />
     </div>
-      <div className="container p-5" style={{backgroundColor: "lightgrey"}}>
+      <div className="container p-5" style={{backgroundColor: "#E0E0E0"}}>
         <Jumbotron />
       </div>
-      <div className="container">
-        <div className="row justify-content-between">
+      <div className="container ">
+        <div className="row">
           <div className="col-lg-3 col-md-6 mb-4 pt-3">
             <div className="card">{cardComponents[0]}</div>
           </div>
@@ -47,7 +47,4 @@ const Home = () => {
     </div>
   );
 };
-
-
-
 export default Home;
