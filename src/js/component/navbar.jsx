@@ -2,8 +2,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary bg-dark">
-        <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary bg-dark ">
+        <div className="container-fluid px-5">
             <a className="navbar-brand text-light fw-bold" href="#">Start Bootstrap</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
