@@ -22,7 +22,7 @@ const Home = () => {
     <div className="container-fluid">
       <Navbar />
     </div>
-      <div className="container p-5 " style={{backgroundColor: "lightgrey"}}>
+      <div className="container p-5" style={{backgroundColor: "lightgrey"}}>
         <Jumbotron />
       </div>
       <div className="container">
@@ -47,7 +47,7 @@ const Home = () => {
     </div>
   );
 };
-  
+
 
 
 export default Home;
