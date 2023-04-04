@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./footer.jsx";
 import Navbar from "./navbar.jsx"
 
 //include images into your bundle
@@ -35,7 +36,8 @@ const Home = () => {
         {cardComponents[3]}
         </div>
 		</div>
-	  </div>
+    <Footer />
+  </div>
 
 	);
   };
